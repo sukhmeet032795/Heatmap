@@ -1,0 +1,61 @@
+Instruction Manual:
+
+1) Install Prerequisites:
+
+	a) You should have a pre-installed Python3,Pip3 and mysql-server
+		Some handy commands:
+			
+			 a.1) sudo apt-get install python3-pip (to install pip)
+		
+			 a.2) sudo apt-get install mysql-server (to install mysql)	
+							
+	b) In bonvoyage folder at manage.py level, run the command "pip3 install -r requirement.txt"
+	c) In bonvoyage/settings.py set Database settings:
+		
+		You have to set the name of your database , password of mysql , set user
+
+		i.e:
+
+		DATABASES = {
+			'default': {
+			'ENGINE': 'django.db.backends.mysql',
+			'NAME': '', (Name of your MySql database)
+			'USER':'', (User of mysql)
+			'HOST':'localhost',
+			'PASSWORD':'password', (Password of your Mysql Server)
+			'PORT':'3306'
+			}
+		}
+	d) Now you need to run the command "python3 manage.py makemigrations" and "python3 manage.py migrate" to create models
+	e) In bonvoyage folder at manage.py level, run the command "python3 airportDbParse.py" and after this run the command 
+		"python3 countryISO.py"	
+	f) Before you run the server at manage.py level, create a superuser using the command "python3 manage.py createsuperuser".
+	   Since you have successfully installed django-server , now write the command "python3 manage.py runserver" to run the server.
+
+
+	g) After running the runserver command, you must be seeing :
+
+		October 17, 2015 - 06:00:33
+		Django version 1.8.5, using settings 'bonvoyage.settings'
+		Starting development server at http://127.0.0.1:8000/
+		Quit the server with CONTROL-C.
+
+	   Open the link given in your settings(eg: http://127.0.0.1:8000/) in a chrome browser and you must be seeing the homepage of 		   Bon Voyage.
+
+           For rest instructions, please view the presentation and the video at ("https://www.youtube.com/watch?v=hXk23iagR7s")  		 	
+	 
+
+
+
+i.e:
+	
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': '', (Name of your MySql database)
+    'USER':'', ()
+    'HOST':'localhost',
+    'PASSWORD':'sonu1995', (Password of your Mysql Server)
+    'PORT':'3306'
+    }
+}
