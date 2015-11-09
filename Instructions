@@ -42,20 +42,13 @@ Instruction Manual:
 
 	   Open the link given in your settings(eg: http://127.0.0.1:8000/) in a chrome browser and you must be seeing the homepage of 		   Bon Voyage.
 
-           For rest instructions, please view the presentation and the video at ("https://www.youtube.com/watch?v=hXk23iagR7s")  		 	
-	 
+
+2) When you log in as an admin, you will see an analysis button on the top right corner. When you click on it, you will see the various places where click occurs.
+
+
+           
 
 
 
-i.e:
-	
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': '', (Name of your MySql database)
-    'USER':'', ()
-    'HOST':'localhost',
-    'PASSWORD':'sonu1995', (Password of your Mysql Server)
-    'PORT':'3306'
-    }
-}
+
+
